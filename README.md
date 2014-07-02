@@ -1,6 +1,8 @@
 # Logger::Application
 
-TODO: Write a gem description
+## Description
+
+Add logging support to your application.
 
 ## Installation
 
@@ -18,11 +20,33 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+ 1. Define your application class as a sub-class of this class.
+ 2. Override the +run+ method in your class to do many things.
+ 3. Instantiate it and invoke #start.
+
+## Example
+
+```ruby
+class FooApp < Logger::Application
+  def initialize(foo_app, application_specific, arguments)
+    super('FooApp') # Name of the application.
+  end
+
+  def run
+    ...
+    log(WARN, 'warning', 'my_method1')
+    ...
+    @log.error('my_method2') { 'Error!' }
+    ...
+  end
+end
+
+status = FooApp.new(....).start
+```
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/logger-application/fork )
+1. Fork it ( https://github.com/hsbt/logger-application/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
