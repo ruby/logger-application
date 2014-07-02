@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Logger::Application::VERSION
   spec.authors       = ["SHIBATA Hiroshi"]
   spec.email         = ["hsbt@ruby-lang.org"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Add logging support to your application.}
+  spec.description   = %q{Add logging support to your application.}
   spec.homepage      = ""
   spec.license       = "2-clause BSDL"
 
