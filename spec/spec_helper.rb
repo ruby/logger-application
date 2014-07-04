@@ -1,4 +1,9 @@
 require 'logger/application'
+require 'tempfile'
+
+def tmp(path)
+  Tempfile.create(path)
+end
 
 module LoggerSpecs
 
