@@ -1,4 +1,5 @@
 require 'logger/application'
+require 'mspec/matchers/output_to_fd'
 require 'tempfile'
 require 'fileutils'
 
@@ -13,6 +14,7 @@ module LoggerSpecs
   def self.strip_date(str)
     str.gsub(/[A-Z].*\[.*\]/, "").lstrip
   end
+
   class TestApp < Logger::Application
     def initialize(appname, log_file=nil)
       super(appname)
