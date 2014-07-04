@@ -1,7 +1,7 @@
 require 'logger'
 require "logger/application/version"
 
-module Logger
+class Logger
   #
   # == Description
   #
