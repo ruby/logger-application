@@ -59,8 +59,10 @@ describe "Logger::Application#log=" do
   end
 
   after :all do
-    @log_file.close
-    rm_r @file_path
+    if @log_file
+      @log_file.close
+      rm_r @file_path
+    end
   end
 
   it "sets the log device" do
@@ -69,4 +71,3 @@ describe "Logger::Application#log=" do
     lambda { @app.log(Logger::WARN, "STDERR Message") }.should output_to_fd(regex, STDERR)
   end
 end
-
