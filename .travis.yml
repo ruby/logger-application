@@ -5,4 +5,4 @@ rvm:
   - 2.1
   - ruby-head
 
-script: bundle exec rake test
+script: bundle exec rake test spec
