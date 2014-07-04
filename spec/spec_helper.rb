@@ -1,5 +1,8 @@
 require 'logger/application'
 require 'tempfile'
+require 'fileutils'
+
+include FileUtils
 
 def tmp(path)
   Tempfile.create(path)
