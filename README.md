@@ -1,7 +1,7 @@
 # Logger::Application
 
 [![Gem Version](https://badge.fury.io/rb/logger-application.png)](http://badge.fury.io/rb/logger-application)
-[![Build Status](https://secure.travis-ci.org/hsbt/logger-application.png)](http://travis-ci.org/hsbt/logger-application)
+[![Build Status](https://travis-ci.org/ruby/logger-application.svg)](https://travis-ci.org/ruby/logger-application)
 
 ## Description
 
