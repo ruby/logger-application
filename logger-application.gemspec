@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["hsbt@ruby-lang.org"]
   spec.summary       = %q{Add logging support to your application.}
   spec.description   = %q{Add logging support to your application.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/ruby/logger-application"
   spec.license       = "2-clause BSDL"
 
   spec.files         = `git ls-files -z`.split("\x0")
