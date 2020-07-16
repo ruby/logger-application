@@ -1,4 +1,9 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in logger-application.gemspec
 gemspec
+
+gem "bundler"
+gem "rake", "~> 11.3"
+gem "test-unit"
+gem "rspec", "~> 2.14.1"
+gem "mspec"
