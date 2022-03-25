@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.description   = %q{Add logging support to your application.}
   spec.homepage      = "https://github.com/ruby/logger-application"
   spec.license       = "2-clause BSDL"
+  spec.required_ruby_version = "< 3.1"
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
